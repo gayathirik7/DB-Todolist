@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Basic container styles */
+.todo-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #2C2F38; /* Dark background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff; /* White text */
+}
+
+/* Style the input field */
+.todo-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #444; /* Darker border for input */
+  border-radius: 6px;
+  font-size: 18px;
+  background-color: #333; /* Dark input background */
+  color: #fff; /* White text */
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-input::placeholder {
+  color: #888; /* Light grey placeholder */
+}
+
+.todo-input:focus {
+  border-color: #4CAF50; /* Green focus border */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); /* Green glow */
+}
+
+/* Style the add button */
+.add-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slight enlarge effect */
+}
+
+.add-button:active {
+  background-color: #388e3c; /* Even darker green when clicked */
+}
+
+/* List of todo items */
+.todo-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style each todo item */
+.todo-item {
+  background-color: #444; /* Dark grey background for list items */
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  color: #fff; /* White text */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #555; /* Lighter grey on hover */
+  transform: scale(1.02); /* Slight enlarge effect */
+}
+
+/* Alternate item background for contrast */
+.todo-item:nth-child(odd) {
+  background-color: #3a3a3a; /* Darker background for odd items */
+}
+
+.todo-item:nth-child(even) {
+  background-color: #444; /* Slightly lighter background for even items */
+}
+
